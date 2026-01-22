@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио | TimeWatcher</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">PORTFOLIO<span>.</span></div>
+            <div class="nav-links">
+                <button onclick="showPage('about')" id="btn-about" class="active">О мне</button>
+                <button onclick="showPage('projects')" id="btn-projects">Проекты</button>
+                <button onclick="showPage('orders')" id="btn-orders">Заказать</button>
+                <a href="https://www.patreon.com/TimeWatcherMax?utm_campaign=creatorshare_fan" target="_blank" class="donate-link-anchor">Поддержать</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section id="about" class="page active">
+            <h1 class="title">О мне</h1>
+            <div class="description-box">
+                <p>Я создаю аддоны по сезонам <strong>Лолошки</strong> и не только. Также я участвую в команде, которая создает сюжетный сезон в <strong>Майнкрафт Бедрок</strong>. Работаю там главным сценаристом и менеджером.<br><br>
+                Я родом из <strong>Украины</strong>. 🇺🇦<br>
+                Мои любимые игры: <strong>Minecraft Bedrock</strong>, <strong>Hollow Knight</strong>, <strong>Hollow Knight: Silksong</strong>.<br>
+                Любимые жанры: <strong>Стратегии</strong>.</p>
+            </div>
+
+            <div class="social-links">
+                <a href="https://discord.gg/9a2EmGkpwd" target="_blank" class="social-item ds">Discord Сервер</a>
+                <a href="https://youtube.com/@watcher_times?si=xk5qR0Z-Xxbe_agu" target="_blank" class="social-item yt">YouTube</a>
+                <a href="https://tiktok.com/@timewatcher27" target="_blank" class="social-item tt">TikTok</a>
+                <a href="https://t.me/demiurge_work" target="_blank" class="social-item tg">ТГ Канал</a>
+                <a href="https://t.me/storysmiths" target="_blank" class="social-item tg-team">Я и команда</a>
+                <a href="https://t.me/+fz2pkgjBO5gyZDE6" target="_blank" class="social-item tg-chat">Чат канала</a>
+            </div>
+
+            <p class="status-text">Изучаю языки программирования:</p>
+            <div class="skills-container">
+                <div class="skill-card python">Python</div>
+                <div class="skill-card java">Java</div>
+                <div class="skill-card js">JavaScript</div>
+                <div class="skill-card html">Html</div>
+                <div class="skill-card css">CSS</div>
+            </div>
+        </section>
+
+        <section id="projects" class="page">
+            <h1 class="title">Проекты</h1>
+            <div class="grid">
+                <div class="card clickable-card" onclick="openModal('teamModal')">
+                    <div class="card-content">
+                        <h3>Сюжетный Сезон</h3>
+                        <p>Сценарий и менеджмент в Minecraft Bedrock Edition.</p>
+                        <span class="click-hint">Нажми, чтобы узнать о команде →</span>
+                    </div>
+                </div>
+
+                <div class="card clickable-card" onclick="openModal('addonMenuModal')">
+                    <div class="card-content">
+                        <h3>Аддоны Лолошки</h3>
+                        <p>Коллекция уникальных разработок и меню.</p>
+                        <span class="click-hint" style="color: #facc15;">Нажми, чтобы открыть список →</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="orders" class="page">
+            <h1 class="title">Заказать</h1>
+            <div class="description-box">
+                <p>Вы можете заказать техническую разработку аддонов для Minecraft Bedrock.</p>
+            </div>
+            <div class="grid" style="grid-template-columns: 1fr;">
+                <div class="card order-card" style="max-width: 500px; margin: 0 auto; text-align: center;">
+                    <div class="icon">🛠️</div>
+                    <h3>Разработка Аддона</h3>
+                    <p>Кастомные предметы, блоки и механики.</p>
+                    <div class="price-container">
+                        <span class="price-tag">от 50 грн</span>
+                        <span class="price-tag stars">от 50 ★ TG</span>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="https://t.me/TimeWatcher_official" target="_blank" class="contact-button">Написать в Telegram</a>
+            </div>
+        </section>
+    </main>
+
+    <div id="teamModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('teamModal')">&times;</span>
+            <div class="modal-header">
+                <h2>StorySmiths Team</h2>
+            </div>
+            <div class="modal-body">
+                <p>Всем привет! Мы начинающая команда <strong>StorySmiths Team</strong>!! Делаем мы для этого молодого человека <a href="https://t.me/loloplay_mods" target="_blank">@loloplay_mods</a></p>
+                <div class="modal-divider"></div>
+                <p><strong>< ИНФО ></strong><br>
+                Мы — команда StorySmiths. Занимаемся созданием сюжетных аддонов в игре Minecraft: Bedrock Edition.</p>
+                
+                <p style="margin-top: 15px;"><strong>🧰 Наши участники:</strong><br>
+                • @TimeWatcher_official (менеджер, гл.сценарист)<br>
+                • @MANDARINGDORHY (кодер)<br>
+                • @ledi_ketra (сценаристка)<br>
+                • @pdhdhgh (строитель)<br>
+                • @MrLololoshka100 (тестер)<br>
+                • @fixsick_pro (гл.кодер)</p>
+
+                <p style="margin-top: 15px;"><strong>🔗 Наши ТГ Каналы:</strong><br>
+                • Гл.сценарист: <a href="https://t.me/demiurge_work1" target="_blank">demiurge_work1</a><br>
+                • Строитель: <a href="https://t.me/Tokraft912" target="_blank">Tokraft912</a><br>
+                • Еще строитель: <a href="https://t.me/Mr_Lololowka0" target="_blank">Mr_Lololowka0</a><br>
+                • Сценаристка: <a href="https://t.me/FilamaPodval" target="_blank">FilamaPodval</a><br>
+                • Гл.кодер: <a href="https://t.me/Fixray_govorit" target="_blank">Fixray_govorit</a><br>
+                • Сценаристка: <a href="https://t.me/Its_ketra" target="_blank">Its_ketra</a></p>
+
+                <div class="modal-divider"></div>
+                <p>Тик Ток: <a href="https://www.tiktok.com/@storysmiths.team" target="_blank">storysmiths.team</a><br>
+                Ютуб: <a href="https://www.youtube.com/@StorySmiths_Team" target="_blank">StorySmiths_Team</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="addonMenuModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('addonMenuModal')">&times;</span>
+            <div class="modal-header">
+                <h2>Список Аддонов</h2>
+                <p style="font-size: 13px; color: #666;">Выберите аддон для просмотра</p>
+            </div>
+            <div class="modal-divider"></div>
+            <div class="modal-body">
+                <div class="addon-list-item" onclick="switchToDetails()">
+                    <div style="display: flex; align-items: center; gap: 15px;">
+                        <span style="font-size: 24px;">✨</span>
+                        <div>
+                            <strong style="color: #facc15;">Идеальный Мир (Меню)</strong>
+                            <p style="font-size: 11px; color: #888;">Версия 1.20+ | Анимация и музыка</p>
+                        </div>
+                    </div>
+                    <span style="color: #3b82f6; font-weight: bold;">→</span>
+                </div>
+                <div class="addon-list-item" style="opacity: 0.5; cursor: default;">
+                    <span style="font-size: 24px;">🔒</span>
+                    <div>
+                        <strong>Новый проект...</strong>
+                        <p style="font-size: 11px;">В разработке</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="addonDetailsModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('addonDetailsModal')">&times;</span>
+            <div id="lockStep" style="text-align: center; padding: 20px;">
+                <div style="font-size: 50px; margin-bottom: 15px;">🔒</div>
+                <h2 style="color: #facc15;">Нужна подписка</h2>
+                <p style="margin: 15px 0; font-size: 14px; color: #bbb;">Чтобы открыть файлы этого аддона, пожалуйста, подпишитесь на основной канал.</p>
+                <a href="https://t.me/demiurge_work1" target="_blank" class="contact-button" onclick="showUnlockBtn()" style="background: #3b82f6;">1. Перейти в канал</a>
+                <button id="checkSubBtn" class="contact-button" style="display:none; background: #222; margin-top:10px; border: 1px solid #facc15; width: 100%;" onclick="unlockContent()">2. Я подписался</button>
+            </div>
+
+            <div id="unlockedContent" style="display:none;">
+                <img src="IMG_20260121_211409_391.jpg" style="width:100%; border-radius: 15px; margin-bottom: 15px; border: 1px solid #333;">
+                <h2 style="color: #3b82f6;">Меню: Идеальный Мир</h2>
+                <div class="modal-divider"></div>
+                <p><strong>Что добавлено:</strong><br>
+                • Анимационное меню<br>
+                • Музыка для меню (можно скачать без)</p>
+                <p style="margin-top:10px;"><strong>Авторы:</strong><br>
+                Сценарист: <a href="https://t.me/demiurge_work1" target="_blank">@demiurge_work1</a><br>
+                Текстуры: <a href="https://t.me/Fixray_govorit" target="_blank">@Fixray_govorit</a></p>
+                <p style="margin-top:10px; color: #facc15; font-weight: bold;">Версия 1.20+</p>
+                <div style="background: rgba(255,0,0,0.1); padding: 10px; border-radius: 10px; border: 1px solid #ff4444; margin-top: 15px; font-size: 12px;">
+                    <strong>❗ Премечания ❗</strong><br>
+                    Не работает с майнкрафтом который не поддерживает музыку.
+                </div>
+                <a href="ТВОЯ_ССЫЛКА_ТУТ" target="_blank" class="contact-button" style="width: 100%; text-align: center; margin-top: 20px; background: #facc15; color: #000;">Скачать файл</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showPage(pageId) {
+            document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+            document.querySelectorAll('.nav-links button').forEach(b => b.classList.remove('active'));
+            setTimeout(() => {
+                const targetPage = document.getElementById(pageId);
+                if(targetPage) targetPage.classList.add('active');
+                const targetBtn = document.getElementById('btn-' + pageId);
+                if(targetBtn) targetBtn.classList.add('active');
+            }, 50);
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function openModal(id) { document.getElementById(id).style.display = 'flex'; }
+        function closeModal(id) { document.getElementById(id).style.display = 'none'; }
+        
+        function switchToDetails() {
+            closeModal('addonMenuModal');
+            openModal('addonDetailsModal');
+        }
+
+        function showUnlockBtn() { document.getElementById('checkSubBtn').style.display = 'inline-block'; }
+        function unlockContent() {
+            document.getElementById('lockStep').style.display = 'none';
+            document.getElementById('unlockedContent').style.display = 'block';
+        }
+
+        window.onclick = function(e) {
+            if(e.target.classList.contains('modal')) e.target.style.display = 'none';
+        }
+    </script>
+</body>
+</html>
