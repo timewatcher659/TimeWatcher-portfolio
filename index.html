@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Портфолио | TimeWatcher</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -15,7 +15,7 @@
                 <button onclick="showPage('about')" id="btn-about" class="active">О мне</button>
                 <button onclick="showPage('projects')" id="btn-projects">Проекты</button>
                 <button onclick="showPage('orders')" id="btn-orders">Заказать</button>
-                <a href="https://www.patreon.com/TimeWatcherMax?utm_campaign=creatorshare_fan" target="_blank" class="donate-link-anchor">Поддержать</a>
+                <a href="https://www.patreon.com/TimeWatcherMax" target="_blank" class="donate-link-anchor">Поддержать</a>
             </div>
         </div>
     </nav>
@@ -24,27 +24,19 @@
         <section id="about" class="page active">
             <h1 class="title">О мне</h1>
             <div class="description-box">
-                <p>Я создаю аддоны по сезонам <strong>Лолошки</strong> и не только. Также я участвую в команде, которая создает сюжетный сезон в <strong>Майнкрафт Бедрок</strong>. Работаю там главным сценаристом и менеджером.<br><br>
-                Я родом из <strong>Украины</strong>. 🇺🇦<br>
-                Мои любимые игры: <strong>Minecraft Bedrock</strong>, <strong>Hollow Knight</strong>, <strong>Hollow Knight: Silksong</strong>.<br>
-                Любимые жанры: <strong>Стратегии</strong>.</p>
+                <p>Я создаю аддоны по сезонам <strong>Лолошки</strong>. Работаю главным сценаристом и менеджером в команде сюжетного сезона для Minecraft Bedrock.<br><br>
+                Я из <strong>Украины</strong>. 🇺🇦 Мои любимые игры: Minecraft, Hollow Knight, Silksong.</p>
             </div>
-
             <div class="social-links">
-                <a href="https://discord.gg/9a2EmGkpwd" target="_blank" class="social-item ds">Discord Сервер</a>
-                <a href="https://youtube.com/@watcher_times?si=xk5qR0Z-Xxbe_agu" target="_blank" class="social-item yt">YouTube</a>
-                <a href="https://tiktok.com/@timewatcher27" target="_blank" class="social-item tt">TikTok</a>
-                <a href="https://t.me/demiurge_work" target="_blank" class="social-item tg">ТГ Канал</a>
-                <a href="https://t.me/storysmiths" target="_blank" class="social-item tg-team">Я и команда</a>
-                <a href="https://t.me/+fz2pkgjBO5gyZDE6" target="_blank" class="social-item tg-chat">Чат канала</a>
+                <a href="https://t.me/demiurge_work" target="_blank" class="social-item">ТГ Канал</a>
+                <a href="https://youtube.com/@watcher_times" target="_blank" class="social-item">YouTube</a>
+                <a href="https://discord.gg/9a2EmGkpwd" target="_blank" class="social-item">Discord</a>
             </div>
-
-            <p class="status-text">Изучаю языки программирования:</p>
             <div class="skills-container">
                 <div class="skill-card python">Python</div>
                 <div class="skill-card java">Java</div>
                 <div class="skill-card js">JavaScript</div>
-                <div class="skill-card html">Html</div>
+                <div class="skill-card html">HTML</div>
                 <div class="skill-card css">CSS</div>
             </div>
         </section>
@@ -52,13 +44,100 @@
         <section id="projects" class="page">
             <h1 class="title">Проекты</h1>
             <div class="grid">
-                <div class="card clickable-card" onclick="openModal('teamModal')">
-                    <div class="card-content">
-                        <h3>Сюжетный Сезон</h3>
-                        <p>Сценарий и менеджмент в Minecraft Bedrock Edition.</p>
-                        <span class="click-hint">Нажми, чтобы узнать о команде →</span>
-                    </div>
+                <div class="card" onclick="openModal('teamModal')">
+                    <h3>StorySmiths Team</h3>
+                    <p>Наша команда по созданию сюжетов.</p>
+                    <span class="click-hint">О команде →</span>
                 </div>
+                <div class="card" onclick="openModal('addonMenuModal')">
+                    <h3 style="color: #facc15;">Аддоны Лолошки</h3>
+                    <p>Список моих публичных аддонов.</p>
+                    <span class="click-hint">Открыть список →</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="orders" class="page">
+            <h1 class="title">Заказать</h1>
+            <div class="description-box">
+                <p>Закажите разработку аддона: механики, предметы и блоки.</p>
+                <p style="margin-top: 10px;">Цена: <strong>от 50 грн / 50 ★</strong></p>
+            </div>
+            <a href="https://t.me/TimeWatcher_official" target="_blank" class="contact-button">Написать в Telegram</a>
+        </section>
+    </main>
+
+    <div id="teamModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('teamModal')">&times;</span>
+            <h2>StorySmiths Team</h2>
+            <div class="modal-divider"></div>
+            <p>Делаем аддоны для <a href="https://t.me/loloplay_mods" target="_blank">@loloplay_mods</a></p>
+            <p style="margin-top: 10px;"><strong>Участники:</strong><br>
+            • @TimeWatcher_official (Лид)<br>
+            • @MANDARINGDORHY (Кодер)<br>
+            • @ledi_ketra (Сценарий)<br>
+            • @pdhdhgh (Строитель)<br>
+            • @MrLololoshka100 (Тестер)<br>
+            • @fixsick_pro (Гл. Кодер)</p>
+            <div class="modal-divider"></div>
+            <p><strong>ТГ Каналы:</strong><br>
+            <a href="https://t.me/demiurge_work1" target="_blank">demiurge_work1</a>, 
+            <a href="https://t.me/Tokraft912" target="_blank">Tokraft912</a>, 
+            <a href="https://t.me/Mr_Lololowka0" target="_blank">Mr_Lololowka0</a>, 
+            <a href="https://t.me/FilamaPodval" target="_blank">FilamaPodval</a>, 
+            <a href="https://t.me/Fixray_govorit" target="_blank">Fixray_govorit</a>, 
+            <a href="https://t.me/Its_ketra" target="_blank">Its_ketra</a></p>
+        </div>
+    </div>
+
+    <div id="addonMenuModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('addonMenuModal')">&times;</span>
+            <h2>Список Аддонов</h2>
+            <div class="modal-divider"></div>
+            <div class="addon-list-item" onclick="openAddonDetails()">
+                <div>
+                    <strong style="color: #facc15;">Идеальный Мир (Меню)</strong>
+                    <p style="font-size: 11px; color: #666;">Версия 1.20+</p>
+                </div>
+                <span>→</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="addonDetailsModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('addonDetailsModal')">&times;</span>
+            <div id="lockStep" style="text-align: center;">
+                <div style="font-size: 40px;">🔒</div>
+                <h3>Нужна подписка</h3>
+                <a href="https://t.me/demiurge_work1" target="_blank" class="contact-button" onclick="document.getElementById('checkSubBtn').style.display='block'">1. Перейти в канал</a>
+                <button id="checkSubBtn" class="contact-button" style="display:none; margin-top:10px; background: #222;" onclick="unlock()">2. Я подписался</button>
+            </div>
+            <div id="unlockedContent" style="display:none;">
+                <img src="IMG_20260121_211409_391.jpg" style="width: 100%; border-radius: 15px;">
+                <h3 style="margin-top:10px;">Идеальный Мир (Меню)</h3>
+                <a href="ТВОЯ_ССЫЛКА" target="_blank" class="contact-button" style="margin-top:15px; background: #facc15; color: #000;">Скачать .mcpack</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showPage(id) {
+            document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+            document.querySelectorAll('.nav-links button').forEach(b => b.classList.remove('active'));
+            document.getElementById(id).classList.add('active');
+            document.getElementById('btn-' + id).classList.add('active');
+        }
+        function openModal(id) { document.getElementById(id).style.display = 'flex'; }
+        function closeModal(id) { document.getElementById(id).style.display = 'none'; }
+        function openAddonDetails() { closeModal('addonMenuModal'); openModal('addonDetailsModal'); }
+        function unlock() { document.getElementById('lockStep').style.display = 'none'; document.getElementById('unlockedContent').style.display = 'block'; }
+        window.onclick = function(e) { if(e.target.className === 'modal') e.target.style.display = 'none'; }
+    </script>
+</body>
+</html>
 
                 <div class="card clickable-card" onclick="openModal('addonMenuModal')">
                     <div class="card-content">
